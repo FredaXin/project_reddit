@@ -1,11 +1,17 @@
-# Project: Predicting Posts From r/StarWars vs. r/startrek
+# Project: Using Classification Models to Predict Posts From r/StarWars vs. r/startrek
 ## Problem Statement
 
-Star Wars and Star Trek fan communities normally do not mingle. However, as the moderator of a small subreddit called r/scifi_universes, I encourage fans from both communities to have friendly and robust discussions on my forum. Since my subreddit is small, I encourage my subscribers to crosspost on other subreddits (such as r/startrek and r/StarWars) to attract more attentions to their posts and my subreddit. Therefore, I plan to create a bot which will suggest a subreddit (i.e. r/startrek or r/StarWars) to crosspost to based on the title and contents of the posts.
+In this project, I developed multiple classification models and predicted which of
+the following subreddits a given post belongs to: r/startrek or r/StarWars. The
+project relies on various natural language processing (NLP) techniques to process text
+information of a post. 
 
-I will use the following classification models: Naive Bayes (Multinomial Naive Bayes and Gaussian Naive Bayes), Logistic Regression, KNN, and SVM. I will use AUC ROC as the metric to evaluate the models and select the best version.
+The following classification models were developed: Naive Bayes (Multinomial Naive
+Bayes and Gaussian Naive Bayes), Logistic Regression, KNN, and SVM. The AUC ROC
+score was used as the metric to evaluate the models and select the best version.
 
-I will collect 5000 posts from each subreddit (r/startrek and r/StarWars) to
+5000 posts from each subreddit (r/startrek and r/StarWars) was collected using
+[Pushshift's](https://pushshift.io/api-parameters/) API to
 train our model.
 
 
@@ -45,7 +51,4 @@ The data we use to train the model do not include the comments. As we know,
 reddit comments are the goldmine where we can find a lot of valuable
 information. To further improve our model, we should consider including comments
 in our dataset. 
-
-**Future Steps**:  
-As my subreddit r/scifi_universes grows, I want to introduce more diversity of r/scifi_universes, and to include people who are interested in other scifi universes such as Battlestar Galactica, or even the DC and Marvel universes. Therefore, I will need to expand my y classes, and go beyond binary classes. I will explore classification models which are more suitable for multi classes. 
 
