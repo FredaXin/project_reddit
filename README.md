@@ -1,18 +1,17 @@
 # Project: Using Classification Models to Predict Posts From r/StarWars vs. r/startrek
 ## Problem Statement
 
-In this project, I developed multiple classification models and predicted which of
+In this project, I developed multiple classification models to predict which of
 the following subreddits a given post belongs to: r/startrek or r/StarWars. The
 project relies on various natural language processing (NLP) techniques to process text
 information of a post. 
 
 The following classification models were developed: Naive Bayes (Multinomial Naive
 Bayes and Gaussian Naive Bayes), Logistic Regression, KNN, and SVM. The AUC ROC
-score was used as the metric to evaluate the models and select the best version.
+score was used as the metric for model evaluation and selection.
 
-5000 posts from each subreddit (r/startrek and r/StarWars) was collected using
-[Pushshift's](https://pushshift.io/api-parameters/) API to
-train our model.
+5000 posts from each subreddit (r/startrek and r/StarWars) were collected using
+[Pushshift's](https://pushshift.io/api-parameters/).
 
 
 ---
@@ -36,9 +35,7 @@ suggestions about a subreddit (i.e. r/startrek or r/StarWars) to crosspost to
 based on the title and contents of the posts.
 
 ---
-## Limitations and Future Steps
-
-**Limitations**
+## Limitations
 
 during the data collection process, important information was left out: Since we
 only collect posts with text, r/startrek have more of posts with text than
