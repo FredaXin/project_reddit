@@ -1,7 +1,5 @@
-# ![](https://ga-dash.s3.amazonaws.com/production/assets/logo-9f88ae6c9c3871690e33280fcf557f33.png) Project 3: Project 3: Predicting Posts From r/StarWars vs. r/startrek
-
-
-### Problem Statement
+# Project: Predicting Posts From r/StarWars vs. r/startrek
+## Problem Statement
 
 Star Wars and Star Trek fan communities normally do not mingle. However, as the moderator of a small subreddit called r/scifi_universes, I encourage fans from both communities to have friendly and robust discussions on my forum. Since my subreddit is small, I encourage my subscribers to crosspost on other subreddits (such as r/startrek and r/StarWars) to attract more attentions to their posts and my subreddit. Therefore, I plan to create a bot which will suggest a subreddit (i.e. r/startrek or r/StarWars) to crosspost to based on the title and contents of the posts.
 
@@ -13,7 +11,7 @@ train our model.
 
 ---
 
-#### Executive Summary
+## Executive Summary
 
 During the data collection process, I noticed that in order to collect the same amount of posts (i.e. 5000 for each subreddit), r/StarWars went over a much longer time span (780 days), comparing to r/startrek which only went over 420 days. Since our function only collects 'is_self' (i.e. text posts), This information indicated that r/startrek posts tend to have more text posts than r/StarWars. However, this information was not included in the features for our models, and we should keep in mind of the limitation of our models.
 
@@ -23,7 +21,7 @@ During the modeling process, I used pipelines combined with grid-search for each
 
 ---
 
-### Conclusion
+## Conclusion
 
 Among the 4 categories of models, i.e. Naive Bayes, Logistic Regression, KNN, and SVM, the simple Multinomial Naive Bayes outperformed the others by a very small margin. Based on the AUC ROC score, the model is able to provide a very good threshold to separate the two classes, i.e. r/startrek and r/StarWars. In addition, Multinomial Naive Bayes runs faster than the others.
 
@@ -32,7 +30,7 @@ suggestions about a subreddit (i.e. r/startrek or r/StarWars) to crosspost to
 based on the title and contents of the posts.
 
 ---
-### Limitations and Future Steps
+## Limitations and Future Steps
 
 **Limitations**
 
